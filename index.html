@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blush Theory</title>
+        <style>
+            body {
+                background-color: #fff0f5;
+            }
+            h1 {
+                color: #913f62;
+                font-size: 40px;
+                font-family: Georgia, serif;
+            }
+            h2 {
+                color: #b56583;
+                font-family: Arial, sans-serif;
+            }
+            h3 {
+                color:#a34d73;
+            }
+            li {
+                color: #913f62;
+            }
+            .rose-muse {
+                    width: 200px;
+            }
+
+            .rose-muse .bottle-body {
+                background: linear-gradient(to right, #ff8c5d, #b85f83);
+                height: 200px;
+                width: 120px;
+                border-radius: 25px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .cloud-cap {
+                background-color: #f7d9e8;
+                width: 140px;
+                height: 70px;
+                border-radius: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                box-shadow: 0px 5px 12px rgba(145, 63, 98, 0.1);
+            }
+            .cloud-cap::before {
+                content: "";
+                position: absolute;
+                top: -25px;
+                left: 10px;
+                width: 65px;
+                height: 65px;
+                background-color: #f7d9e8;
+                border-radius: 50%;
+            }
+            .cloud-cap::after {
+                content: "";
+                position: absolute;
+                top: -35px;
+                right: 10px;
+                width: 75px;
+                height: 75px;
+                background-color: #f7d9e8;
+                border-radius: 50%;
+            }
+            .pink-crush {
+                    width: 200px;
+            }
+            .pink-crush .bottle-body {
+                background: linear-gradient(to right, #f7a1b0, #d94f6c);
+                height: 200px;
+                width: 120px;
+                border-radius: 25px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .berry-bloom {
+                    width: 200px;
+            }
+            
+            .berry-bloom .bottle-body {
+                background: linear-gradient(to right, #d16a8c, #8b2e4f);
+                height: 200px;
+                width: 120px;
+                border-radius: 25px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+            
+            .gloss-collection {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content:center
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Blush Theory</h1>
+        <h2>The day she becomes her own dream girl.</h2>
+        <h3>Meet the Gloss Collection</h3>
+        <p>Discover the latest shades and formulas designed to enhance your natural beauty.</p>
+        <ul>
+            <li>Rose Muse</li>
+            <li>Pink Crush</li>
+            <li>Berry Bloom</li>
+        </ul>
+
+        <div class="gloss-collection">
+        <div class="rose-muse">
+            <div class="cloud-cap"></div>
+            <div class="bottle-body"></div>
+        
+        <h3>Rose Muse</h3>
+        <p>A soft, romantic pink that enhances your natural glow.</p>
+        <p>$14.00</p>
+        <button type="button" data-product="Rose Muse">Add to Cart</button>
+        </div>
+        <div class="pink-crush">
+            <div class="cloud-cap"></div>
+            <div class="bottle-body"></div>
+        
+        <h3>Pink Crush</h3>
+        <p>A vibrant, long-lasting pink that adds dimension to your look.</p>
+        <p>$14.00</p>
+        <button type="button" data-product="Pink Crush">Add to Cart</button>
+        </div>
+        <div class="berry-bloom">
+            <div class="cloud-cap"></div>
+            <div class="bottle-body"></div>
+        
+        <h3>Berry Bloom</h3>
+        <p>A deep, rich berry shade that makes a bold statement.</p>
+        <p>$14.00</p>
+        <button type="button" data-product="Berry Bloom">Add to Cart</button>
+        </div>
+
+        </div>
+
+        <h2>Your Shopping Cart</h2>
+        <p id="cart-count">Items in cart: 0</p>
+            <ul id="cart-items"></ul>
+
+    <script src="script.js"></script>
+    </body>
+</html>
