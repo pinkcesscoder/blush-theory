@@ -23,3 +23,5 @@ I'm continuing to strengthen my programming fundamentals while learning how to b
 - Using event listeners and DOM manipulation
 - Debugging and improving my code
 - Using Git and GitHub for version control
+
+Blush Theory is being developed and prepared for its first live website release.
